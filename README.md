@@ -93,11 +93,11 @@ output.logstash:
 .
 ```
  
- ######You may use whatever input file that you want, as long as it is shipable by Filebeat.
+ ###### You may use whatever input file that you want, as long as it is shipable by Filebeat.
  
- ######For Raspberry Pi, the log cannot be received by Elasticsearch, so I changed to Logstash instead.
+ ###### For Raspberry Pi, the log cannot be received by Elasticsearch, so I changed to Logstash instead.
  
- ######But in my VmWare Ubuntu, using Elasticsearch is no problem and more secured.
+ ###### But in my VmWare Ubuntu, using Elasticsearch is no problem and more secured.
  
  Save and exit.
  
