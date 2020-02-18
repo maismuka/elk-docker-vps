@@ -1,6 +1,15 @@
 # elk-docker-vps-RaspPi4
 
-## 1. Create new VPS [DigitalOcean]
+1. VPS must have at least 2Gb of RAM (my VPS machine used 3Gb RAM, 1Gb CPU)
+
+2. Raspberry Pi 4 with full Buster installation (not Buster lite)
+
+
+## 1. Create new VPS
+
+Proceed to create new VPS, it's up to you which VPS provider you used.
+
+Dont forget to run update and upgrade `apt update && apt upgrade -y`
 
 ## 2. Docker
 
@@ -11,6 +20,20 @@ But, for that, we need to install Docker and Docker-compose
 From your Ubuntu machine, use  `apt install docker.io`
 
 After that proceed to install Docker-compose. 
+
+Check the current release and if necessary, update with the command;
+
+`curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose`
+
+set permission `sudo chmod +x /usr/local/bin/docker-compose`
+
+Verify installation `docker-compose --version`
+
+```
+docker-compose version 1.21.2, build a133471
+```
+
+Clone the git below for the ELK Docker.
 
 `git clone https://github.com/deviantony/docker-elk.git`
 
@@ -24,7 +47,7 @@ Checking connectivity... done.
 
 Go into the newly created folder `cd  /docker/elk/`
 
-Simply run `docker-compose up -d` to start install the Docker.
+Simply run `docker-compose up` to start install and run the Docker.
 
 ```
 Creating docker-elk_elasticsearch_1 ... done
