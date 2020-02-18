@@ -1,4 +1,4 @@
-# elk-docker-vps
+# elk-docker-vps-RaspPi4
 
 ## 1. Create new VPS [DigitalOcean]
 
@@ -118,7 +118,7 @@ For now, the Suricata it is!
 
 ## 4. Suricata
 
-The main purpose for this Suricata installation is to provide log, you may use any other software as long as the produce `.log` or `.json` which is requireq for the Filebeat shipping mechanism.
+The main purpose for this Suricata installation is to provide log, you may use any other software as long as the produce `.log` or `.json` which is required for the Filebeat shipping mechanism.
 
 Since this is ARM machine, no Suricata repository can be add.
 
