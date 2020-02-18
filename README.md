@@ -157,7 +157,7 @@ This will download rules and configuration files from Emerging Threat's open rul
 
 Then update the rules, run `suricata-update`
 
-View available sources suricata-update list-sources. The results is somewhat as below;
+View available sources `suricata-update list-sources`. The results is somewhat as below;
 
 ```
 15/2/2020 -- 07:15:16 - <Info> -- Using data-directory /var/lib/suricata.
@@ -200,7 +200,7 @@ ITS DONE!
  
  With your VPS's IP address, proceed to http://[ip]:5601
  
- From here, select log from logstash.
+ From here, select log from logstash. Refer your Filebeat configuration.
  
  
  
