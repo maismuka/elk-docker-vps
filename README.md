@@ -173,6 +173,12 @@ Restart the Suricata.
 
 ITS DONE!
  
+ ## 5. Configure Kibana
+ 
+ With your VPS's IP address, proceed to http://[ip]:5601
+ 
+ From here, select log from logstash.
+ 
  
  
  
