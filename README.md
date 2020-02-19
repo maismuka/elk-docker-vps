@@ -23,7 +23,9 @@ After that proceed to install Docker-compose.
 
 Check the current release and if necessary, update with the command;
 
-`curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose`
+```
+curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+```
 
 set permission `sudo chmod +x /usr/local/bin/docker-compose`
 
